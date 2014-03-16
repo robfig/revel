@@ -31,11 +31,11 @@ Both Git and Mercurial are required to allow `go get` to clone various dependenc
 
 To get the Revel framework, run
 
-	go get github.com/robfig/revel
+	go get github.com/revel/revel
 
 This command does a couple things:
 
-* Go uses git to clone the repository into `$GOPATH/src/github.com/robfig/revel/`
+* Go uses git to clone the repository into `$GOPATH/src/github.com/revel/revel/`
 * Go transitively finds all of the dependencies and runs `go get` on them as well.
 
 #### Build the Revel command line tool
@@ -44,7 +44,7 @@ The Revel command line tool is how you build, run, and package Revel application
 
 Use `go get` to install it:
 
-	go get github.com/robfig/revel/revel
+	go get github.com/revel/revel/revel
 
 Then, ensure the $GOPATH/bin directory is in your PATH so that you can reference the command from anywhere.
 
