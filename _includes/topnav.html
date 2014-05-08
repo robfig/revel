@@ -1,12 +1,12 @@
     <script>
-    	if (confirm("This site is no longer kept up to date. Redirect to new site at http://revel.github.io?")) {
-    		window.location.href="http://revel.github.io"
-    	}
+      if (confirm("This site is no longer kept up to date. Redirect to the new site at revel.github.io?")) {
+        location = "http://revel.github.io" + location.pathname.replace(/^\/revel/, '') + location.search + location.hash;
+      }
     </script>
     <div class="navbar" style="margin:0 auto 2px auto;">
       <div class="navbar-inner">
         <div class="container" style="position:relative">
-					<div style="position:absolute;top:20px;right:0"><b>NOTICE: Revel has moved! <a href="http://github.com/revel/revel">http://github.com/revel/revel</a></b></div>
+          <div style="position:absolute;top:20px;right:0"><b>NOTICE: Revel has moved! <a href="http://github.com/revel/revel">http://github.com/revel/revel</a></b></div>
           <a class="brand" href="{{ page.root }}/index.html">
             <img class="revel-hat-img"
                  src="{{ page.root }}/img/revelhat.png"
