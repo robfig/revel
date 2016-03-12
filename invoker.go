@@ -1,7 +1,7 @@
 package revel
 
 import (
-	"code.google.com/p/go.net/websocket"
+	"golang.org/x/net/websocket"
 	"reflect"
 )
 
