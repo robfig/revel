@@ -2,7 +2,6 @@ package revel
 
 import (
 	"bytes"
-	"code.google.com/p/go.net/websocket"
 	"fmt"
 	"io"
 	"io/ioutil"
@@ -11,6 +10,8 @@ import (
 	"net/url"
 	"regexp"
 	"strings"
+
+	"golang.org/x/net/websocket"
 )
 
 type TestSuite struct {
